@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooks - Autismo</title>
+    <style>
+        body { background-color: #d5f5d5; font-family: Arial, sans-serif; }
+        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; display: none; }
+        h1 { text-align: center; }
+        input { width: 100%; padding: 10px; margin: 10px 0; }
+        button { width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <div id="login" class="container">
+        <h1>Login</h1>
+        <input type="text" id="name" placeholder="Nome" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button onclick="showPayment()">Registrar</button>
+    </div>
+
+    <div id="payment" class="container">
+        <h1>Pagamento</h1>
+        <input type="text" placeholder="Número do Cartão" required>
+        <input type="text" placeholder="Nome no Cartão" required>
+        <input type="text" placeholder="Data de Validade" required>
+        <button onclick="carregarPagamento()">Pagar</button>
+    </div>
+
+    <div id="ebook" class="container">
+        <h1>Entendendo o Autismo</h1>
+        <p>O autismo é um transtorno do desenvolvimento que afeta a comunicação, o comportamento e a interação social. Indivíduos com autismo podem apresentar uma variedade de habilidades e desafios, e cada caso é único.</p>
+        <p>Este eBook aborda as características do autismo, estratégias de inclusão, e como apoiar pessoas autistas em diferentes ambientes, incluindo escola e trabalho.</p>
+    </div>
+
+    <script>
+        // Mostra a página de login inicialmente
+        document.getElementById('login').style.display = 'block';
+
+        function showPayment() {
+            // Esconde a página de login e mostra a de pagamento
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('payment').style.display = 'block';
+        }
+
+        function carregarPagamento() {
+            alert("Carregando pagamento...");
+            setTimeout(() => {
+                // Esconde a página de pagamento e mostra a do eBook
+                document.getElementById('payment').style.display = 'none';
+                document.getElementById('ebook').style.display = 'block';
+            }, 2000); // Simula um carregamento de 2 segundos
+        }
+    </script>
+
+</body>
+</html>
