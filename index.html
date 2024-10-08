@@ -11,6 +11,8 @@
         input { width: 100%; padding: 10px; margin: 10px 0; }
         button { width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
         button:hover { background-color: #45a049; }
+        .qr-code { text-align: center; margin: 20px 0; }
+        .pix-name { margin-top: 10px; }
     </style>
 </head>
 <body>
@@ -28,6 +30,13 @@
         <input type="text" placeholder="Número do Cartão" required>
         <input type="text" placeholder="Nome no Cartão" required>
         <input type="text" placeholder="Data de Validade" required>
+
+        <div class="qr-code">
+            <img src="https://via.placeholder.com/150" alt="QR Code">
+            <p>Escaneie o QR Code para pagar.</p>
+        </div>
+
+        <input type="text" class="pix-name" placeholder="Nome do Pix" required>
         <button onclick="carregarPagamento()">Pagar</button>
     </div>
 
