@@ -13,6 +13,7 @@
         button:hover { background-color: #45a049; }
         .qr-code { text-align: center; margin: 20px 0; }
         .pix-name { margin-top: 10px; }
+        .ebook-info { margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -27,12 +28,10 @@
 
     <div id="payment" class="container">
         <h1>Pagamento</h1>
-        <input type="text" placeholder="Número do Cartão" required>
-        <input type="text" placeholder="Nome no Cartão" required>
-        <input type="text" placeholder="Data de Validade" required>
 
         <div class="qr-code">
-            <img src="https://via.placeholder.com/150" alt="QR Code">
+            <p>Nome do Pix: Cassiano Totti</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=00020101021126590014br.gov.bcb.pix0114+55189962630390219autismo%20em%20dialogo%2052040000530398654042.005802BR5925CASSIANO%20TOTTI%20DE%20ALMEIDA6009SAO%20PAULO622905251J9PKC4A0AYNM6NQ6B0A3FR9Y630471C5" alt="QR Code">
             <p>Escaneie o QR Code para pagar.</p>
         </div>
 
@@ -42,8 +41,25 @@
 
     <div id="ebook" class="container">
         <h1>Entendendo o Autismo</h1>
-        <p>O autismo é um transtorno do desenvolvimento que afeta a comunicação, o comportamento e a interação social. Indivíduos com autismo podem apresentar uma variedade de habilidades e desafios, e cada caso é único.</p>
-        <p>Este eBook aborda as características do autismo, estratégias de inclusão, e como apoiar pessoas autistas em diferentes ambientes, incluindo escola e trabalho.</p>
+        <div class="ebook-info">
+            <p>O autismo é um transtorno do desenvolvimento que afeta a comunicação, o comportamento e a interação social. Indivíduos com autismo podem apresentar uma variedade de habilidades e desafios, e cada caso é único.</p>
+            <p>Este eBook aborda as características do autismo, estratégias de inclusão, e como apoiar pessoas autistas em diferentes ambientes, incluindo escola e trabalho.</p>
+            <p><strong>Características do Autismo:</strong></p>
+            <ul>
+                <li>Desafios na comunicação verbal e não verbal.</li>
+                <li>Dificuldade em entender normas sociais.</li>
+                <li>Interesses intensos em tópicos específicos.</li>
+                <li>Comportamentos repetitivos ou rituais.</li>
+            </ul>
+            <p><strong>Exemplos de Inclusão:</strong></p>
+            <ol>
+                <li>Implementar métodos visuais na sala de aula.</li>
+                <li>Utilizar tecnologia assistiva para facilitar a comunicação.</li>
+                <li>Promover atividades sociais em grupos pequenos.</li>
+            </ol>
+            <p><strong>Como Apoiar:</strong></p>
+            <p>Os educadores e familiares podem desempenhar um papel vital, proporcionando ambientes estruturados e previsíveis, além de encorajar a comunicação e a socialização de maneira positiva e inclusiva.</p>
+        </div>
     </div>
 
     <script>
